@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src="script.js" ></script>
+
+    <title>Encriptador</title>
+</head>
+
+<body>
+
+<header class="header-logo">
+    <img class="logo" src="/img/Frame 6.png" alt="logo de laura">
+    <h1 class="titulo-principal">Encriptador de mensajes</h1>
+</header>
+
+<main class="contenedor-flex">
+
+<section class="izquierda">
+    <textarea class="text-area"  cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+ 
+    <div>
+        <h6 class="informacion">Solo letras minúsculas y sin acento</h6>
+    </div>
+
+    <div class="botones">
+        <button  onclick ="encriptar()" class="btn-encriptar"  >Encriptar</button>
+        <button onclick ="desencriptar()" class="btn-desencriptar"  >Desencriptar</button>
+    </div>
+
+</section>
+
+<section class="derecha">
+ 
+    <img class="imagen-derecha" src="/img/animado.png" alt="imagen animada">
+    <h1 class="texto-alerta">Ningún mensaje fue encontrado</h1>
+    <textarea class="texto-ingreso" name="name"  cols="80" rows="8" placeholder="Ingrese el texto que desees encriptar o desencriptar"></textarea>
+   
+    
+<div>
+    <button class="btn-copiar" type="button" onclick="copiar()">Copiar</button>
+</div>
+
+</section>
+
+</main>
+
+
+</body>
+
+</html>
